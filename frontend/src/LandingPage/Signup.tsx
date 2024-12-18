@@ -43,7 +43,7 @@ export default function SignUp() {
           onChange={(e) => setConfirmPassword(e.target.value)}
           required
         ></input>
-        <button type='submit'>Log in</button>
+        <button type='submit'>Sign Up</button>
       </form>
       <p>
         Already have an account? <Link to='/Login'>Log In</Link>
