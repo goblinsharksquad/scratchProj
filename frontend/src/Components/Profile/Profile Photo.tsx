@@ -5,7 +5,7 @@ class ProfilePhoto extends Component {
   render() {
     return (
       <div>
-        <img src />
+        <img src/>
       </div>
     );
   }
