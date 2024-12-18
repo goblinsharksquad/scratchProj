@@ -3,7 +3,7 @@ import React from 'react';
 //creating the button component;
 
 function functionality() {
-  const userArray = [];
+  const userArra: [] = [];
 
   fetch('/api/user')
     .then((response) => response.json())
@@ -14,13 +14,13 @@ function functionality() {
     ) //an array of users then maybe I can use this in randomizer function?
     .catch((error) => console.log(error));
 
-  function randomizer(userArray) {
+  function randomizer(userArray): Object {
     let shuffledArray = []; //--will display the shuffled names
     let usedIndexes = []; //---will keep track of already pushed elements
 
     let i = 0;
     while (i < userArray.length) {
-      let randomNumber = Math.floor(Math.random() * userArray.length);
+      let randomNumber: number = Math.floor(Math.random() * userArray.length);
       if (!usedIndexes.includes(randomNumber)) {
         shuffledArray.push(userArray[randomNumber]);
         usedIndexes.push(randomNumber);
@@ -77,3 +77,6 @@ function myFunction() {
 */
 
 export default Button;
+function forEach(arg0: (user: any) => void): any {
+  throw new Error('Function not implemented.');
+}
