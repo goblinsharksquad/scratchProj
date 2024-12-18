@@ -1,5 +1,13 @@
+// this file will configure and establish a connection pool to the PostgreSQL Database
+
 const { Pool } = require('pg');
 require('dotenv').config();
+
+// console.log('Database Configuration:');
+// console.log(`User: ${process.env.DB_USER}`);
+// console.log(`Host: ${process.env.DB_HOST}`);
+// console.log(`Database: ${process.env.DB_NAME}`);
+// console.log(`Port: ${process.env.DB_PORT}`);
 
 const pool = new Pool({
   user: process.env.DB_USER,
