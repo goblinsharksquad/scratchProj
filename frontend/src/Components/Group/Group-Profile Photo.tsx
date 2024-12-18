@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 
-//import './css/Main.css
+import './frontend/src/App.css'
+
+
 class GroupPP extends Component {
   render() {
     return (

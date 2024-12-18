@@ -3,6 +3,9 @@ import Navbar from './Components/Navbar.js';
 // import ProfilePhoto from './Components/Profile/Profile Photo.tsx';
 import GroupAbout from './Components/Group/Group-About.tsx';
 import GroupInt from './Components/Group/Group-Interests.tsx';
+import './App.css';
+
+
 
 function Group() {
   return (

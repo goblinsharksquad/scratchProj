@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import GroupPP from './Group-Profile Photo';
-//import './css/Main.css
+import './frontend/src/App.css'
 
 class GroupAbout extends Component {
   render() {

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
-//import './css/Main.css
+import './frontend/src/App.css'
+
 class Interests extends Component {
   render() {
     return (

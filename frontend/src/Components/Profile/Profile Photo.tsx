@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
-//import './css/Main.css
+import './frontend/src/App.css'
+
 class ProfilePhoto extends Component {
   render() {
     return (
