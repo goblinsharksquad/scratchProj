@@ -6,15 +6,14 @@ import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 const LandingPage = () => {
   return (
     <Router>
-      <div>
+      <div className='landingpage'>
         <h1>Santa Santa</h1>
-        <Login></Login>
-      </div>
 
-      <Routes>
-        <Route path='/Signup' element={<SignUp />} />
-        <Route path='/Login' element={<Login />} />
-      </Routes>
+        <Routes>
+          <Route path='/' element={<Login />} />
+          <Route path='/Signup' element={<SignUp />} />
+        </Routes>
+      </div>
     </Router>
   );
 };

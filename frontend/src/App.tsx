@@ -5,7 +5,7 @@ import LandingPage from './LandingPage';
 
 const App: React.FC = () => {
   return (
-    <div>
+    <div className='App'>
       <LandingPage></LandingPage>
     </div>
   );

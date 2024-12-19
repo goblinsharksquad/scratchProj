@@ -6,5 +6,5 @@
     "esModuleInterop": true, // provides compatibility
     "noImplicitAny": true //disallow variables with an implicit type of any
   },
-  "include": ["./src", "webpack.config.js"]
+  "include": ["./frontend/src", "webpack.config.js"]
 }
