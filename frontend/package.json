@@ -1,8 +1,0 @@
-{
-  "dependencies": {
-    "react-router-dom": "^7.0.2"
-  },
-  "devDependencies": {
-    "@types/react": "^19.0.2"
-  }
-}
