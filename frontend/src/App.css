@@ -1,5 +1,5 @@
-.App {
-  background-color: red;
+.landingpage {
+  background-color: rgb(226, 40, 40);
   min-height: 800px;
 }
 
@@ -9,11 +9,16 @@
   background-color: white;
   margin: 0 auto;
   padding: 20px;
+
 }
 
 .forms input {
-  width: 80%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
+
 
 .landingpage h1 {
   font-family: 'Mountains of Christmas', serif;
@@ -22,8 +27,38 @@
   text-align: center;
 }
 
-.Login button {
+.forms button {
   border-radius: 5px;
   margin: 0 auto;
-  padding: 10px 40px;
+  padding: 10px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: rgb(226, 40, 40);
+  color: white;
+}
+.Login button:hover {
+  background-color: rgb(180, 238, 171);
+}
+
+.forms p {
+  text-align: center;
+}
+
+.forms p a:hover {
+  color: rgb(205, 48, 48);
+}
+
+.Login {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  gap: 10px;
+}
+
+.signUp{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  gap: 10px;
+
 }
