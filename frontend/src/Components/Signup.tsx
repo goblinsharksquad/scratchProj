@@ -7,12 +7,38 @@ export default function SignUp() {
   const [name, setName] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
+  const [error, setError] = useState('');
   const navigate = useNavigate();
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     console.log('Signup submitted', name, email, password, confirmPassword);
-    navigate('./ProfilePage');
+    const url = 'http://localhost:5000/auth/register';
+    try {
+      const response = await fetch(url, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          email,
+          name,
+          password,
+          confirmPassword,
+        }),
+      });
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.message);
+      }
+
+      const json = await response.json();
+      console.log('Login success:', json);
+      navigate('./ProfilePage');
+    } catch (error) {
+      console.error(error);
+      setError('Invalid email or password.');
+    }
   };
 
   return (

@@ -1,7 +1,7 @@
 import React from 'react';
 import Login from './Components/Login';
 import SignUp from './Components/Signup';
-import ProfilePage from './ProfilePage';
+// import ProfilePage from './ProfilePage';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 const LandingPage = () => {
@@ -13,7 +13,7 @@ const LandingPage = () => {
         <Routes>
           <Route path='/' element={<Login />} />
           <Route path='/Signup' element={<SignUp />} />
-          <Route path='/profile' element={<ProfilePage />} />
+          {/* <Route path='/profile' element={<ProfilePage />} /> */}
         </Routes>
       </div>
     </Router>
