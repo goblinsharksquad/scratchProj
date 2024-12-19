@@ -1,6 +1,6 @@
 import React from 'react';
-import Login from './LandingPage/Login';
-import SignUp from './LandingPage/Signup';
+import Login from './Components/Login';
+import SignUp from './Components/Signup';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 const LandingPage = () => {
