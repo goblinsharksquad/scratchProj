@@ -6,6 +6,7 @@ import Interests from './Components/Profile/Interests.tsx';
 import './App.css';
 
 
+
 function Profile() {
   return (
     <div className='profile'>

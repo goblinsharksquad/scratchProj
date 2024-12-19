@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+// import { createContext } from 'react';
+// const UserContext = createContext();
 
 
 export default function Login() {
@@ -10,7 +12,7 @@ export default function Login() {
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     console.log('Login submitted', email, password);
-     navigate('/profile');
+     navigate('./ProfilePage');
   };
 
   return (
