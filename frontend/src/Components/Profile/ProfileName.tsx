@@ -6,20 +6,26 @@ import Login from '../Login';
 
 function ProfileName() {
   const [name, setName] = useState('');
-  const [error, setError] = useState(null);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     // Fetch the user name when the component mounts
     const fetchName = async () => {
       try {
-        const response = await fetch('http://localhost:3000/api/getUserName');
+        const response = await fetch(
+          'http://localhost:5000/groups/GoblinShark/participants'
+        );
         if (!response.ok) {
           throw new Error('Failed to fetch user name');
         }
         const data = await response.json();
         setName(data.name);
       } catch (err) {
-        setError(err.message);
+        if (err instanceof Error) {
+          setError(err.message); // Now works, as error is string | null
+        } else {
+          setError('An unknown error occurred');
+        }
       }
     };
 
