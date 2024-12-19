@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Routes, Route, useNavigate } from 'react-router-dom';
-import { Formik, Form, Field } from 'formik';
+// import { Formik, Form, Field } from 'formik';
 import SignUp from '../Signup';
 import Login from '../Login';
 
-function GroupName() {
+function ProfileName() {
   const [name, setName] = useState('');
-  const [error, setError] = useState(null); // State to track errors
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     // Fetch the user name when the component mounts
@@ -34,4 +34,4 @@ function GroupName() {
   );
 }
 
-export default GroupName;
+export default ProfileName;

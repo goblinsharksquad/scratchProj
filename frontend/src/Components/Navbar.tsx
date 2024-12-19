@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 import './App.css';
 
@@ -6,18 +7,18 @@ class Navbar extends Component {
   render() {
     return (
       <nav className='navbar'>
-        <a href='Home'>
+        <Link to='/LandingPage'>
           <i className='home'></i>
-        </a>
-        <a href='Groups'>
+        </Link>
+        <Link to='/ProfilePage'>
+          <i className='profile'></i>
+        </Link>
+        <Link to='/GroupPage'>
           <i className='group'></i>
-        </a>
-        <a href='Find An Event'>
-          <i className='event'></i>
-        </a>
-        <a href='Surprise Me'>
-          <i className='surpise'></i>
-        </a>
+        </Link>
+        <Link to='/FindAnEvent'>
+          <i className='surprise'></i>
+        </Link>
       </nav>
     );
   }
