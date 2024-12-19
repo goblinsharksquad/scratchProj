@@ -69,4 +69,27 @@ const joinGroup = async (req, res, next) => {
   }
 };
 
-module.exports = { createGroup, joinGroup };
+const getGroupParticipants = async (req, res, next) => {
+  const { groupName } = req.params;
+
+  try {
+    const result = await db.query(
+      // JOIN -> bring in data from users table
+      // ON -> for each row in participants table, find the corresponding row in users table where participants.user_id = users.id
+      `SELECT users.id, users.name, users.email
+      FROM participants
+      JOIN users ON participants.user_id = users.id
+      JOIN groups ON participants.group_id = groups.id
+      WHERE groups.name = $1`,
+      [groupName]
+    );
+
+    res.locals.participants = result.rows;
+    next();
+  } catch (error) {
+    console.error(`Error fetching participants:`, error);
+    next(error);
+  }
+};
+
+module.exports = { createGroup, joinGroup, getGroupParticipants };

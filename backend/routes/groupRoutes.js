@@ -1,5 +1,9 @@
 const express = require('express');
-const { createGroup, joinGroup } = require('../controllers/groupController');
+const {
+  createGroup,
+  joinGroup,
+  getGroupParticipants,
+} = require('../controllers/groupController');
 
 const router = express.Router();
 
@@ -14,5 +18,13 @@ router.post('/groups/join', joinGroup, (req, res) => {
     user_name: res.locals.participant.userName,
   });
 });
+
+router.get(
+  '/groups/:groupName/participants',
+  getGroupParticipants,
+  (req, res) => {
+    res.status(200).json(res.locals.participants);
+  }
+);
 
 module.exports = router;
