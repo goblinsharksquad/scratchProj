@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import photo from '../../assets/elves.jpeg';
+
+
 import './frontend/src/App.css';
 
 class GroupPP extends Component {
