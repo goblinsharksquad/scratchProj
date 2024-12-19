@@ -29,7 +29,7 @@ export default function Login() {
 
       const json = await response.json();
       console.log('Login success:', json);
-      navigate('/profile');
+   navigate('./ProfilePage');
     } catch (error) {
       console.error(error);
       setError('Invalid email or password.');
