@@ -14,7 +14,7 @@ export default function Login() {
   };
 
   return (
-    <div>
+    <div className='forms'>
       <form className='Login' onSubmit={handleSubmit}>
         <input
           type='email'
@@ -33,7 +33,7 @@ export default function Login() {
         <button type='submit'>Log in</button>
       </form>
       <p>
-        Don't have an account? <Link to='/Login'>Log In</Link>
+        Don't have an account? <Link to='/SignUp'>Sign Up</Link>
       </p>
     </div>
   );
