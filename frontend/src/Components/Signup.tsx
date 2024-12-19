@@ -9,11 +9,11 @@ export default function SignUp() {
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    console.log('Signup submitted', name, email,password, confirmPassword);
+    console.log('Signup submitted', name, email, password, confirmPassword);
   };
 
   return (
-    <div>
+    <div className='forms'>
       <form className='signUp' onSubmit={handleSubmit}>
         <input
           type='name'
@@ -46,7 +46,7 @@ export default function SignUp() {
         <button type='submit'>Sign Up</button>
       </form>
       <p>
-        Already have an account? <Link to='/Login'>Log In</Link>
+        Already have an account? <Link to='/'>Log In</Link>
       </p>
     </div>
   );
