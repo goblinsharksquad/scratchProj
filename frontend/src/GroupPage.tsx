@@ -10,13 +10,10 @@ function Group() {
     <div className='Group'>
       <Navbar />
       <br />
-      {/* <ProfilePhoto /> */}
-      <br />
-      {/* //will take in about elements and photo */}
-      {/* <GroupAbout /> */}
+      <GroupAbout />
       <br />
       <h1>
-        {/* <GroupInt /> */}
+        <GroupInt />
         <h1 id='interestsSection' className='interests'>
           Interests
         </h1>

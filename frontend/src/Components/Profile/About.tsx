@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ProfilePhoto from '../../assets/santa.png';
 import './App.css';
+import ProfileName from './ProfileName';
 
 class About extends Component {
   render() {
@@ -14,7 +15,9 @@ class About extends Component {
             height='180'
             alt='profile photo'
           />
-          <h2>Hi, I'm {name}</h2>
+          <h2>
+            Hi, I'm <ProfileName />
+          </h2>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa,
             omnis veritatis! Voluptatibus dolor cum hic sint sunt dolorum,
