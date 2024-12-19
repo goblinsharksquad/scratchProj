@@ -6,6 +6,7 @@ const bcrypt = require('bcrypt');
 const db = require('../db');
 
 const registerUser = async (req, res, next) => {
+  // extract the properties from the req.body obj
   const { name, email, password } = req.body;
 
   try {
