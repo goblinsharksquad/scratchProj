@@ -5,6 +5,8 @@ import About from './Components/Profile/About';
 import Interests from './Components/Profile/Interests';
 import './App.css';
 
+
+
 function Profile() {
   return (
     <div className='profile'>

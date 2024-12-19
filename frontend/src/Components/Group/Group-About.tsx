@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import GroupPP from './Group-Profile Photo';
-import './frontend/src/App.css';
+import photo from '../../assets/santa.png';
+import './frontend/src/App.css'
 
 class GroupAbout extends Component {
   render() {
     return (
       <section id='container-about' className='container-about'>
-        {/* <h1>Meet the {GroupName} </h1>
-        <img src={GroupPP} width='180' height='180' alt='profile photo' /> */}
+        {/* <h1>Meet the {GroupName} </h1> */}
+        <img src={photo} width='180' height='180' alt='profile photo' />{' '}
         <h2>
           <ul>{/* Name, GroupName, Location would populate here*/}</ul>
         </h2>
