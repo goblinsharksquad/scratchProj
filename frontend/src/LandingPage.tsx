@@ -7,7 +7,7 @@ const LandingPage = () => {
   return (
     <Router>
       <div className='landingpage'>
-        <h1>Santa Santa</h1>
+        <h1>Santa Santa🎁</h1>
 
         <Routes>
           <Route path='/' element={<Login />} />
