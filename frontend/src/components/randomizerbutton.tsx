@@ -3,13 +3,13 @@ import React from 'react';
 //creating the button component;
 
 function functionality() {
-  const userArra: [] = [];
+  const userArray: [] = [];
 
   fetch('/api/user')
     .then((response) => response.json())
     .then((users) =>
       forEach((user) => {
-        userArray.push(user);
+        userArray.push(user: Object);
       })
     ) //an array of users then maybe I can use this in randomizer function?
     .catch((error) => console.log(error));
