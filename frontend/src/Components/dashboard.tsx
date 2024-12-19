@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import './dashboar.css';
+import { createGroup } from '../backend/controllers/groupController.js';
+
+//maybe import the backend router handler function for onclicks?
 
 class Dash extends Component {
   render() {
@@ -18,11 +21,11 @@ class Dash extends Component {
             <p>Check out what events are baking in Santa Village. </p>
           </div>
 
-          <div className='groups'>
+          <div className='groups' onClick={createGroup}>
             <a href='#' className='item'>
               Groups
             </a>
-            <p>Connect with other Elves and be merry.</p>
+            <p>Connect with your fellow Elves and be merry.</p>
           </div>
 
           <div className='events'>
