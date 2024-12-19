@@ -4,6 +4,8 @@
 const express = require('express');
 const cors = require('cors');
 const authRoutes = require('./routes/authRoutes');
+const groupRoutes = require('./routes/groupRoutes');
+
 const globalErrorHandler = require('./globalErrorHandler');
 
 // initialize our Express App
@@ -17,6 +19,7 @@ app.use(express.json());
 // MOUNTING ROUTES
 // mount authRoutes router at base path of '/auth'
 app.use('/auth', authRoutes);
+app.use('/', groupRoutes);
 
 app.use(globalErrorHandler);
 
