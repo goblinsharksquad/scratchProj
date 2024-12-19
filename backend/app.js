@@ -12,9 +12,9 @@ const globalErrorHandler = require('./globalErrorHandler');
 const app = express();
 
 // cors middleware allows any origin to make requests to our server
-// app.use(cors());
+app.use(cors());
 // express.json() -> will parse incoming JSON data in the request body as a JavaScript object
-app.use(cors({ origin: '*' }));
+
 app.use(express.json());
 
 // MOUNTING ROUTES
