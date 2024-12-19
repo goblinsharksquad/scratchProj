@@ -6,7 +6,8 @@ import { Formik, Form, Field } from 'formik';
 function changeName (){
     const [name, setName] = useState('');
 
-    const handleChange = (event) => {
-
+    const handleChange = (e) => {
+        setName(e.target.value)
     }
+    return ();
 }
