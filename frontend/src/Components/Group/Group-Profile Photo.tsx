@@ -1,15 +1,10 @@
 import React, { Component } from 'react';
 
-import './frontend/src/App.css'
-
+import './frontend/src/App.css';
 
 class GroupPP extends Component {
   render() {
-    return (
-      <div>
-        <img src />
-      </div>
-    );
+    return <div>{/* <img src /> */}</div>;
   }
 }
 
