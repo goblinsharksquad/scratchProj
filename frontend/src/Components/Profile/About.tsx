@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ProfilePhoto from '../../assets/santa.png';
-import './frontend/src/App.css';
+import './App.css';
 
 class About extends Component {
   render() {
