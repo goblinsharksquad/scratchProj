@@ -1,8 +1,8 @@
 import React from 'react';
 import Navbar from './Components/Navbar.js';
 // import ProfilePhoto from './Components/Profile/Profile Photo.tsx';
-import About from './Components/Profile/About.tsx';
-import Interests from './Components/Profile/Interests.tsx';
+import About from './Components/Profile/About';
+import Interests from './Components/Profile/Interests';
 import './App.css';
 
 

@@ -5,8 +5,6 @@ import GroupAbout from './Components/Group/Group-About.tsx';
 import GroupInt from './Components/Group/Group-Interests.tsx';
 import './App.css';
 
-
-
 function Group() {
   return (
     <div className='Group'>
@@ -15,14 +13,14 @@ function Group() {
       {/* <ProfilePhoto /> */}
       <br />
       {/* //will take in about elements and photo */}
-      <GroupAbout />
+      {/* <GroupAbout /> */}
       <br />
-      <hr>
-        <GroupInt />
+      <h1>
+        {/* <GroupInt /> */}
         <h1 id='interestsSection' className='interests'>
           Interests
         </h1>
-      </hr>
+      </h1>
     </div>
   );
 }

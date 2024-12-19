@@ -1,10 +1,28 @@
+// {
+//   "compilerOptions": {
+//     "jsx": "react", // eliminates the need to import 'react' in every file
+//     "module": "commonjs",
+//     "strict": true,
+//     "esModuleInterop": true, // provides compatibility
+//     "noImplicitAny": true //disallow variables with an implicit type of any
+//   },
+//   "include": ["./frontend/src", "webpack.config.js"]
+// }
+
 {
   "compilerOptions": {
-    "jsx": "react", // eliminates the need to import 'react' in every file
-    "module": "commonjs",
-    "strict": true,
-    "esModuleInterop": true, // provides compatibility
-    "noImplicitAny": true //disallow variables with an implicit type of any
+    "target": "ES6", // Modern JavaScript
+    "module": "ESNext", // ES Modules
+    "jsx": "react-jsx", // React JSX support
+    "strict": true, // Strict type-checking
+    "esModuleInterop": true, // Compatibility with CommonJS
+    "noImplicitAny": true, // No implicit any types
+    "moduleResolution": "node", // Resolve modules like Node.js
+    "forceConsistentCasingInFileNames": true, // Ensure case consistency
+    "skipLibCheck": true, // Skip checking .d.ts files
+    "resolveJsonModule": true, // Allow JSON imports
+    "isolatedModules": true // Required for Babel transpilation
   },
-  "include": ["./frontend/src", "webpack.config.js"]
+  "include": ["frontend/src/**/*", "webpack.config.js"], // Include all files in `frontend/src` and `webpack.config.js`
+  "exclude": ["node_modules", "dist"] // Exclude unnecessary files
 }
