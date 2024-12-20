@@ -1,3 +1,6 @@
+* {
+  font-family: 'Poiret One', serif;
+}
 .landingpage {
   background-color: rgb(226, 40, 40);
   min-height: 800px;
@@ -9,7 +12,6 @@
   background-color: white;
   margin: 0 auto;
   padding: 20px;
-
 }
 
 .forms input {
@@ -19,8 +21,7 @@
   border-radius: 4px;
 }
 
-
-.landingpage h1 {
+.Santa {
   font-family: 'Mountains of Christmas', serif;
   font-size: 80px;
   color: aliceblue;
@@ -55,10 +56,35 @@
   gap: 10px;
 }
 
-.signUp{
+.signUp {
   display: flex;
   flex-direction: column;
   width: 300px;
   gap: 10px;
+}
+nav {
+  display: flex;
+  justify-content: center;
+}
 
+.navbar {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.navbar li {
+  list-style: none;
+  display: inline;
+  margin-right: 10px;
+}
+
+.navbar li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px;
+}
+.navbar li a:hover {
+  color: black;
 }

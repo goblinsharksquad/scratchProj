@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import './frontend/src/App.css'
+// import './frontend/src/App.css'
 
 class Interests extends Component {
   render() {
