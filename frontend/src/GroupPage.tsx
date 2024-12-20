@@ -1,5 +1,4 @@
 import React from 'react';
-import Navbar from './Components/Navbar';
 // import photo from '../../assets/santa.png';
 import GroupAbout from './Components/Group/Group-About';
 import GroupInt from './Components/Group/Group-Interests';
@@ -8,7 +7,6 @@ import './App.css';
 function Group() {
   return (
     <div className='Group'>
-      <Navbar />
       <br />
       <GroupAbout />
       <br />
