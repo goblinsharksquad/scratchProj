@@ -4,16 +4,18 @@ import { Routes, Route, useNavigate } from 'react-router-dom';
 import SignUp from '../Signup';
 import Login from '../Login';
 
+//Used useState in order to update profiles based on log-in/signup information
 function ProfileName() {
   const [name, setName] = useState('');
-  const [error, setError] = useState<string | null>(null);
+  const [error, setError] = useState<string | null>(null); //<string | null> (null) creates a type where the system expects either a 
+  //string or is okay with it being undefined currently. 
 
   useEffect(() => {
     // Fetch the user name when the component mounts
     const fetchName = async () => {
       try {
         const response = await fetch(
-          'http://localhost:5000/groups/GoblinShark/participants'
+          'http://localhost:5000/groups/GoblinShark/participants' //would connect to back end and pull name of profile
         );
         if (!response.ok) {
           throw new Error('Failed to fetch user name');
@@ -31,7 +33,7 @@ function ProfileName() {
 
     fetchName();
   }, []);
-
+//Once the name is fetched, return statement is invoked and the name is updated
   return (
     <div className='name'>
       {error && <p>Error: {error}</p>}

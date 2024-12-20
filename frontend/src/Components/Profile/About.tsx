@@ -1,7 +1,12 @@
 import React, { Component } from 'react';
+
+//Components to be used below
 import ProfilePhoto from '../../assets/santa.png';
 // import './App.css';
 import ProfileName from './ProfileName';
+
+
+//Class *component* extends Component is the same as creating a function 
 
 class About extends Component {
   render() {
@@ -10,12 +15,13 @@ class About extends Component {
         <section id='container-about' className='container-about'>
           <h1>About Me</h1>
           <img
-            src={ProfilePhoto}
+            src={ProfilePhoto} //passed in the ProfilePhoto as a prop
             width='180'
             height='180'
             alt='profile photo'
           />
           <h2>
+            {/* Name card would populate with fetched user */}
             Hi, I'm <ProfileName />
           </h2>
           <p>

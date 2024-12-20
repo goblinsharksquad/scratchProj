@@ -1,9 +1,35 @@
+/* Main CSS file */
 * {
   font-family: 'Poiret One', serif;
 }
 .landingpage {
   background-color: rgb(226, 40, 40);
   min-height: 800px;
+}
+
+
+/* .Santa includes the font family used for Christmasy Theme */
+
+.Santa {
+  font-family: 'Mountains of Christmas', serif;
+  font-size: 80px;
+  color: aliceblue;
+  text-align: center;
+}
+/* Log-in form & Sign-up Styling */
+
+.forms button {
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 10px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: rgb(226, 40, 40);
+  color: white;
+}
+/* When cursor is over LogIn, the button is highlighted */
+.Login button:hover {
+  background-color: rgb(180, 238, 171);
 }
 
 .forms {
@@ -20,27 +46,6 @@
   border: 1px solid #ccc;
   border-radius: 4px;
 }
-
-.Santa {
-  font-family: 'Mountains of Christmas', serif;
-  font-size: 80px;
-  color: aliceblue;
-  text-align: center;
-}
-
-.forms button {
-  border-radius: 5px;
-  margin: 0 auto;
-  padding: 10px 30px;
-  font-size: 16px;
-  cursor: pointer;
-  background-color: rgb(226, 40, 40);
-  color: white;
-}
-.Login button:hover {
-  background-color: rgb(180, 238, 171);
-}
-
 .forms p {
   text-align: center;
 }
@@ -62,6 +67,8 @@
   width: 300px;
   gap: 10px;
 }
+
+/* Nav Bar Styling */
 nav {
   display: flex;
   justify-content: center;

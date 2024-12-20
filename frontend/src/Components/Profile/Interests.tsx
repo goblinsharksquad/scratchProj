@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 
 // import './frontend/src/App.css'
-
+//The interests component would feature a list of interests that would help other 
+//users decide on gifts for their secret santa
 class Interests extends Component {
   render() {
     return (
