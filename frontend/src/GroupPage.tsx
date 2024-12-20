@@ -1,5 +1,11 @@
+//Imported React library
+//Created a Group Page file to compile the components for the groups
+//that we expect our User to be able to see and join.
+
 import React from 'react';
-// import photo from '../../assets/santa.png';
+
+//Components used
+
 import GroupAbout from './Components/Group/Group-About';
 import GroupInt from './Components/Group/Group-Interests';
 import './App.css';

@@ -3,6 +3,7 @@ import photo from '../../assets/elves.jpeg';
 
 
 // import './frontend/src/App.css';
+//Class *component* extends Component is the same as creating a function 
 
 class GroupPP extends Component {
   render() {

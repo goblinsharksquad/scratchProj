@@ -3,10 +3,11 @@ import { Routes, Route, useNavigate } from 'react-router-dom';
 import { Formik, Form, Field } from 'formik';
 import SignUp from '../Signup';
 import Login from '../Login';
+//Used useState in order to update profiles based on log-in/signup information
 
 function GroupName() {
   const [name, setName] = useState('');
-  const [error, setError] = useState<string | null>(null);
+  const [error, setError] = useState<string | null>(null); //<string | null> (null) creates a type where the system expects either a 
 
   useEffect(() => {
     // Fetch the user name when the component mounts
