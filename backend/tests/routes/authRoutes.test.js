@@ -1,14 +1,14 @@
 // Route Testing
 
 // Tests for the controller functions that handle authentication logic
-// Verifies user data is processed correctly (e.g., validation, password hashing).
-// Ensures user registration and login logic is correct.
-// Tests interactions with the database (e.g., adding users, validating credentials). 
+// Verifies user data is processed correctly (validation, password hashing)
+// Ensures user registration and login logic is correct
+// Tests interactions with the database adding users, validating credentials
 
 // Import Modules
 const request = require('supertest');
 const express = require('express');
-const authRoutes = require('../../routes/authRoutes'); // Adjust the path as needed
+const authRoutes = require('../../routes/authRoutes'); 
 
 // Mock Controller functions
 jest.mock('../../controllers/authController', () => ({ // Mock from authController ('fake')
