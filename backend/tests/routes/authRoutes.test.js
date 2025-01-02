@@ -1,7 +1,7 @@
 // Route Testing
 
 // Tests for the controller functions that handle authentication logic
-// Verifies user data is processed correctly (validation, password hashing)
+// Verifies user data is processed correctly 
 // Ensures user registration and login logic is correct
 // Tests interactions with the database adding users, validating credentials
 
